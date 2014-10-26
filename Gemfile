@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'normalize-rails', '~> 3.0.1'
+gem 'haml'
 
-gem 'semantic-ui-sass', '~> 0.19.3.0'
+gem 'simple_form'
+
+gem "haml-rails"
+
+gem 'foundation-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
