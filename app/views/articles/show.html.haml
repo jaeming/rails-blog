@@ -1,14 +1,12 @@
-%section
-  %br
-  .row
-    .columns.medium-12.medium-centered
-      %p
-        %strong
-          Title:
-        = @article.title
-      %p
-        %strong
-          Text:
-        = @article.text
-    %hr
-    = link_to 'Back', articles_path
+.row
+  .columns.medium-12.medium-centered
+    %p
+      %strong
+        Title:
+      = @article.title
+    %p
+      %strong
+        Text:
+      = @article.text
+  %hr
+  = link_to 'Back', articles_path
