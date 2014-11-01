@@ -1,5 +1,13 @@
 .row
-  .columns
+  .columns.medium-7
+    %br
     %h1 New Article
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempora, nulla repellat facilis laborum, vel sit dolor praesentium quaerat in unde illum deserunt doloremque beatae consequuntur libero harum iusto nemo.
+    = form_for :article, url: articles_path do |f|
+      %p
+        = f.label :title
+        = f.text_field :title
+      %p
+        = f.label :text
+        = f.text_area :text, rows: '15'
+      %p
+        = f.button :submit.capitalize, class: "button small round"

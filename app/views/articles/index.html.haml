@@ -1,0 +1,15 @@
+%section
+%br
+  .row
+    .columns.medium-4.medium-centered
+      %h1.text-center All Articles
+      .text-center
+        = link_to 'New Article', new_article_path, class: 'button tiny'
+      %table
+        %tr
+          %th Title
+          %th Text
+        - @articles.each do |article|
+          %tr
+            %td= article.title
+            %td= article.text

@@ -7,7 +7,7 @@
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
-    %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Karla|Signika:300,600' rel='stylesheet' type='text/css", :rel => "stylesheet", :type => "text/css"}
   %body
     .contain-to-grid.sticky.hide-for-small-only
       %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
@@ -18,9 +18,9 @@
         %section.top-bar-section
           %ul.right
             %li
-              %a{:href => "#"} Home
+              = link_to 'Home', root_path
             %li
-              %a{:href => "#"} Blog
+              = link_to 'Blog', articles_path
             %li
               %a{:href => "#"} Portfolio
             %li
@@ -36,9 +36,9 @@
         %aside.right-off-canvas-menu
           %ul.off-canvas-list
             %li
-              %a{:href => "#"} Home
+              = link_to 'Home', root_path
             %li
-              %a{:href => "#"} Blog
+              = link_to 'Blog', articles_path
             %li
               %a{:href => "#"} Portfolio
             %li

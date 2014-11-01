@@ -1,9 +1,9 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background: #FFFFFF;
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.1rem;
   margin: 0px;
   padding: 0px;
   color: #555555;
@@ -11,3 +11,36 @@ body {
   min-width: 320px;
 }
 
+.top-bar-section ul li > a {
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  transition: all 500ms ease;
+}
+
+.top-bar .name h1 a {
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: 'Signika', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #555555;
+}
+
+h4 {
+  font-family: 'Signika', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #555555;
+}
+
+.tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6  {
+  font-family: 'Signika', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
