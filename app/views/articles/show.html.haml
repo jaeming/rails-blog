@@ -1,12 +1,12 @@
-.row
-  .columns.medium-12.medium-centered
-    %p
-      %strong
-        Title:
-      = @article.title
-    %p
-      %strong
-        Text:
-      = @article.text
-  %hr
-  = link_to 'Back', articles_path
+%section
+  %br
+  .row
+    .columns.medium-12
+      %h1
+        = @article.title
+      %p
+        = @article.text
+      %hr
+      = link_to 'Back', articles_path, class: 'button round tiny edit-button'
+      = link_to 'Edit', edit_article_path(@article), class: 'button small alert round tiny edit-button'
+

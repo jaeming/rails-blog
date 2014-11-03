@@ -1,13 +1,5 @@
 .row
   .columns.medium-7
     %br
-    %h1 New Article
-    = form_for :article, url: articles_path do |f|
-      %p
-        = f.label :title
-        = f.text_field :title
-      %p
-        = f.label :text
-        = f.text_area :text, rows: '15'
-      %p
-        = f.button :submit.capitalize, class: "button small round"
+    %h1 New Post
+    = render 'form'
