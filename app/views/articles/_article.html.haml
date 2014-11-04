@@ -4,10 +4,11 @@
   = article.text
 %small
   = link_to "Post link", article
-  &nbsp; / &nbsp;
-  = link_to "Edit", edit_article_path(article)
-  &nbsp; / &nbsp;
-  = link_to "Delete", article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
+  -if current_user
+    &nbsp; / &nbsp;
+    = link_to "Edit", edit_article_path(article)
+    &nbsp; / &nbsp;
+    = link_to "Delete", article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
 %br
 %br
 %br
