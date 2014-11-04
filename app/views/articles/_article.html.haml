@@ -4,6 +4,10 @@
   = article.text
 %small
   = link_to "Post link", article
-  &nbsp;
+  &nbsp; / &nbsp;
   = link_to "Edit", edit_article_path(article)
-%hr
+  &nbsp; / &nbsp;
+  = link_to "Delete", article_path(article), method: :delete, data: { confirm: 'Are you sure?' }
+%br
+%br
+%br
