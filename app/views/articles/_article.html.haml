@@ -1,7 +1,7 @@
 %h4
   = article.title
 %p
-  = article.text
+  ~ markdown article.text
 %small
   = link_to "Post link", article
   -if current_user
