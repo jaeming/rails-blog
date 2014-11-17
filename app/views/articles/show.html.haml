@@ -5,7 +5,9 @@
       %h1
         = @article.title
       %p
-        = @article.text
+        ~ markdown @article.text
+      %small
+        = link_to "- Posted on #{@article.created_at.strftime('%B %d, %Y')}", @article
       %hr
       = link_to 'Back', articles_path, class: 'button round tiny edit-button'
       - if current_user

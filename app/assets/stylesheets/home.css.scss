@@ -20,9 +20,8 @@ p {
 
 .top-bar .name h1 a {
   font-family: 'Signika', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+  font-size: 1.7rem;
+  color: #fff;
 }
 
 h1 {
@@ -30,6 +29,19 @@ h1 {
   font-weight: 600;
   font-size: 3rem;
   color: #555555;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #555555;
+  font-size: 2.6rem
+}
+
+h3 {
+  font-family: 'Signika', sans-serif;
+  color: #555555;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 h4 {
